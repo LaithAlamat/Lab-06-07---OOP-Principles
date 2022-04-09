@@ -44,13 +44,18 @@ namespace OOP_Part1
 
 
 
-        public virtual void Eat()
+        public virtual string  Eat()
         {
             Console.WriteLine("All Animals eat");
+            string ans = "All Animals eat";
+            return ans;
+            
         }
-        public virtual void Sleep()
+        public virtual string Sleep()
         {
             Console.WriteLine("All animals sleep");
+            string ans = "All animals eat";
+            return ans;
         }
         abstract public void Sound();
 
@@ -60,7 +65,7 @@ namespace OOP_Part1
 
     public interface Abilities
     {
-        public void run();
+        public string run();
         public void swim();
 
     }
@@ -87,13 +92,17 @@ namespace OOP_Part1
 
         protected override int Weight { get; } = 2;
 
-        public override void Eat()
+        public override string Eat()
         {
             Console.WriteLine("All Mamels eat");
+            string ans = "All Mammels eat";
+            return ans;
         }
-        public override void Sleep()
+        public override string Sleep()
         {
             Console.WriteLine("All Mamels sleep");
+            string ans = "All Mamels eat";
+            return ans;
         }
         public override void Sound()
         {
@@ -109,9 +118,11 @@ namespace OOP_Part1
             Console.WriteLine("Most Mammels lives on land");
         }
 
-        public void run()
+        public string run()
         {
             Console.WriteLine("Most Mammels can run");
+            string ans = "most Mammels run";
+            return ans;
         }
 
         public void swim()
@@ -122,13 +133,17 @@ namespace OOP_Part1
        
     public class Lion : Mamels,LivesIn,Abilities
     {
-        public override void Eat()
+        public override string Eat()
         {
-            Console.WriteLine("Lions eat meat");
+            Console.WriteLine("All Lions eat");
+            string ans = "All Lions eat";
+            return ans;
         }
-        public override void Sleep()
+        public override string Sleep()
         {
             Console.WriteLine("All Lions sleep");
+            string ans = "All lions sleep";
+            return ans;
         }
         public override void Sound()
         {
@@ -143,9 +158,11 @@ namespace OOP_Part1
             Console.WriteLine("Lions lives on land");
         }
 
-        public void run()
+        public string run()
         {
             Console.WriteLine("Lions can run");
+            string ans = "All Lions run";
+            return ans;
         }
 
         public void swim()
@@ -156,13 +173,17 @@ namespace OOP_Part1
     }
     public class Bear : Mamels
     {
-        public override void Eat()
+        public override string Eat()
         {
             Console.WriteLine("Bears eats meat and grass");
+            string ans = "All Bears eat";
+            return ans;
         }
-        public override void Sleep()
+        public override string Sleep()
         {
             Console.WriteLine("All Bears sleep");
+            string ans = "All Bears sleep";
+            return ans;
         }
         public override void Sound()
         {
@@ -175,13 +196,17 @@ namespace OOP_Part1
     }
     public class Cow: Mamels
     {
-        public override void Eat()
+        public override string Eat()
         {
             Console.WriteLine("Cows eat grass");
+            string ans = "All Cows eat";
+            return ans;
         }
-        public override void Sleep()
+        public override string Sleep()
         {
             Console.WriteLine("All Cows sleep");
+            string ans = "All Cows sleep";
+            return ans;
         }
         public override void Sound()
         {
@@ -194,13 +219,17 @@ namespace OOP_Part1
     }
     public abstract class Birds : Animal
     {
-        public override void Eat()
+        public override string Eat()
         {
             Console.WriteLine("All Birds eat");
+            string ans = "All Birds eat";
+            return ans;
         }
-        public override void Sleep()
+        public override string Sleep()
         {
             Console.WriteLine("All Birds sleep");
+            string ans = "All birds sleep";
+            return ans;
         }
         public override void Sound()
         {
@@ -228,13 +257,17 @@ namespace OOP_Part1
         protected override int height { get; } = 2;
 
         protected override int Weight { get; } = 2;
-        public override void Eat()
+        public override string  Eat()
         {
             Console.WriteLine("Ducks eat grass");
+            string ans= "Ducks eat grass";
+            return ans;
         }
-        public override void Sleep()
+        public override string Sleep()
         {
             Console.WriteLine("All ducks sleep");
+            string ans = "All Cows eat sleep";
+            return ans;
         }
         public override void Sound()
         {
@@ -262,13 +295,17 @@ namespace OOP_Part1
         protected override int height { get; } = 2;
 
         protected override int Weight { get; } = 2;
-        public override void Eat()
+        public override string Eat()
         {
             Console.WriteLine("All fish eat");
+            string ans = "All fish eat";
+            return ans;
         }
-        public override void Sleep()
+        public override string Sleep()
         {
             Console.WriteLine("Fish don't sleep");
+            string ans = "fish don't sleep";
+            return ans;
         }
         public override void Sound()
         {
